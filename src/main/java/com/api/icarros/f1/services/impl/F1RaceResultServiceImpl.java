@@ -16,8 +16,8 @@ public class F1RaceResultServiceImpl implements F1RaceResultService {
     private F1RaceResultRepository f1RaceResultRepository;
 
     @Override
-    public List<F1RaceResult> findAll() {
-        return f1RaceResultRepository.findAll();
+    public List<F1RaceResult> findByYear(Integer year) {
+        return f1RaceResultRepository.findByYear(year);
     }
 
 }

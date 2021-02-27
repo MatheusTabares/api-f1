@@ -3,6 +3,8 @@ package com.api.icarros.f1.controllers;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.websocket.server.PathParam;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,9 +22,9 @@ public class F1RaceResultController {
     @Autowired
     public F1RaceResultService f1RaceResultService;
 
-    @GetMapping
-    public ResponseEntity<List<F1RaceResultDTO>> findAll() {
-        List<F1RaceResult> list = f1RaceResultService.findAll();
+    @GetMapping("/{year}/last/results")
+    public ResponseEntity<List<F1RaceResultDTO>> findByYear(@PathParam("year") Integer year) {
+        List<F1RaceResult> list = f1RaceResultService.findByYear(year);
         List<F1RaceResultDTO> listDTO = list.stream().map(obj -> new F1RaceResultDTO(obj)).collect(Collectors.toList());
         return ResponseEntity.ok().body(listDTO);
     }

@@ -6,6 +6,6 @@ import com.api.icarros.f1.domains.F1RaceResult;
 
 public interface F1RaceResultService {
 
-    List<F1RaceResult> findAll();
+    List<F1RaceResult> findByYear(Integer year);
 
 }

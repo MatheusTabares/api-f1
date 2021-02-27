@@ -14,7 +14,7 @@ import com.api.icarros.f1.dtos.F1RaceResultDTO;
 import com.api.icarros.f1.services.F1RaceResultService;
 
 @RestController
-@RequestMapping(value = "/f1RaceResult")
+@RequestMapping(value = "/f1")
 public class F1RaceResultController {
 
     @Autowired

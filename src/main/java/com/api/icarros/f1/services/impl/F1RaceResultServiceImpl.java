@@ -17,8 +17,7 @@ public class F1RaceResultServiceImpl implements F1RaceResultService {
 
     @Override
     public List<F1RaceResult> findAll() {
-        // TODO Auto-generated method stub
-        return null;
+        return f1RaceResultRepository.findAll();
     }
 
 }

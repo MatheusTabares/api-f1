@@ -20,6 +20,13 @@ public class F1RaceResult {
 
     private Integer year;
 
+    public F1RaceResult(Long id, String car, Integer position, Integer year) {
+        this.id = id;
+        this.car = car;
+        this.position = position;
+        this.year = year;
+    }
+
     public Long getId() {
         return id;
     }

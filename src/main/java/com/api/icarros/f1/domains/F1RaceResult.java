@@ -20,6 +20,9 @@ public class F1RaceResult {
 
     private Integer year;
 
+    public F1RaceResult() {
+    }
+
     public F1RaceResult(Long id, String car, Integer position, Integer year) {
         this.id = id;
         this.car = car;

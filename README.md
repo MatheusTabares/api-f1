@@ -28,3 +28,5 @@ BODY - {
 -Com o token em mãos, o usuário terá acesso ao endpoint de listagem de corridas. Basta informar no cabeçalho da requisição o parâmetro '**Authorization**' com o valor '**Bearer {token}**'
 
 -Foram criados testes automatizados para cobertura de testes.
+
+-Foram criados tratamento de exceções personalizadas para melhor entendimento do usuário.

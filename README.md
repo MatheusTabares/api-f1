@@ -1,6 +1,6 @@
 # api-f1
 
-Api de resultados de corrida de Fórmula 1
+Api de resultados de corridas de Fórmula 1
 
 ## Tecnologias:
 Java 11, Junit, Mockito, Spring Boot, Spring Security, JWT, JPA, MySQL.

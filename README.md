@@ -30,3 +30,7 @@ BODY - {
 -Foram criados testes automatizados para cobertura de testes.
 
 -Foram criados tratamento de exceções personalizadas para melhor entendimento do usuário.
+
+-Foi criado o banco de dados, denominado **F1** no MySQL. Script de criação está na pasta script na raiz do projeto.
+
+-Foi criado a tabela **F1_RACE_RESULT** no bando de dados **F1**, responsável por manter as informações dos resultados das corridas. Scripts de criação e população da tabela estão na pasta script na raiz do projeto.

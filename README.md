@@ -13,18 +13,16 @@ Esse serviço é responsável por listar o resultado das corridas de fórmula 1,
 Ex: http://localhost:8080/api/f1/2020/last/results
 
 ## Regras de negócio:
--A api possui segurança de autenticação e autorização para o endpoint disponibilizado. Desta forma para ter acesso ao endpoint mencionado a cima, somente realizando o login com os seguintes dados:
-  *Email: apif1@icarros.com
-  *Senha: icarros
-  
+-A api possui segurança de autenticação e autorização para o endpoint disponibilizado. Desta forma para ter acesso ao endpoint mencionado a cima, somente realizando o login.
 -Para realizar o login, basta enviar uma requisição para o endpoint descrito abaixo e no corpo da requisição informar os parâmetro '**email**' '**password**' :
-POST - http://localhost:8080/login
-BODY - {
+-POST - http://localhost:8080/login
+-BODY - `{
     "email": "apif1@icarros.com",
     "password": "icarros"
-}
+}`
 
--No cabeçalho do retorno da requisição com sucesso, será  informado o token JWT de autorização. O mesmo possui criptografia **HS512** e tempo de expiração de 1 minuto.
+-No cabeçalho do retorno da requisição com sucesso, será  informado o token JWT de autorização. O mesmo possui criptografia **HS512** e tempo de expiração de 1 minuto
+
 -Com o token em mãos, o usuário terá acesso ao endpoint de listagem de corridas. Basta informar no cabeçalho da requisição o parâmetro '**Authorization**' com o valor '**Bearer {token}**'
 
 -Foram criados testes automatizados para cobertura de testes.

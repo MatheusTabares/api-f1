@@ -43,6 +43,6 @@ Ex: http://localhost:8080/api/f1/2020/last/results
 - 
 
 
--Qualquer dúvida, estou a disposição
+Qualquer dúvida, estou a disposição
 
--Matheus Tabares (48) 99836-2417
+Matheus Tabares (48) 99836-2417

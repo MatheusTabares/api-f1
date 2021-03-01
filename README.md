@@ -14,8 +14,11 @@ Ex: http://localhost:8080/api/f1/2020/last/results
 
 ## Regras de negócio:
 -A api possui segurança de autenticação e autorização para o endpoint disponibilizado. Desta forma para ter acesso ao endpoint mencionado a cima, somente realizando o login.
+
 -Para realizar o login, basta enviar uma requisição para o endpoint descrito abaixo e no corpo da requisição informar os parâmetro '**email**' '**password**' :
+
 -POST - http://localhost:8080/login
+
 -BODY - `{
     "email": "apif1@icarros.com",
     "password": "icarros"
